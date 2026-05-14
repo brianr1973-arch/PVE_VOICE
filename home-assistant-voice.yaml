@@ -1822,6 +1822,10 @@ voice_assistant:
     - voice_assistant.stop:
     - lambda: id(voice_assistant_phase) = ${voice_assist_not_ready_phase_id};
     - script.execute: control_leds
+  on_client_disconnected:
+    - voice_assistant.stop:
+    - lambda: id(voice_assistant_phase) = ${voice_assist_not_ready_phase_id};
+    - script.execute: control_leds
   on_error:
     # Only set the error phase if the error code is different than duplicate_wake_up_detected or stt-no-text-recognized
     # These two are ignored for a better user experience
