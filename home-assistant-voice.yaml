@@ -1809,7 +1809,7 @@ voice_assistant:
   media_player: external_media_player
   micro_wake_word: mww
   use_wake_word: false
-  noise_suppression_level: 2
+  noise_suppression_level: 4
   auto_gain: 15dBFS
   conversation_timeout: 15s
   volume_multiplier: 2
