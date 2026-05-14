@@ -1813,6 +1813,7 @@ voice_assistant:
   auto_gain: 15dBFS
   conversation_timeout: 15s
   volume_multiplier: 2
+  speaker: announcement_spk_input
   on_client_connected:
     - lambda: id(init_in_progress) = false;
     - micro_wake_word.start:
